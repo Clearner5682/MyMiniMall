@@ -1,0 +1,7 @@
+<view class="tabContainer">
+<view wx:for="{{tabItems}}" class="tabItemContainer" wx:key="tabIndex">
+<view class="tabItem {{activeIndex==index?'active':''}}" bind:tap="selectTabItem" data-index="{{index}}">
+<text>{{item.name}}</text>
+</view>
+</view>
+</view>

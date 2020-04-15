@@ -1,0 +1,5 @@
+.goodItemContainer{
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+}

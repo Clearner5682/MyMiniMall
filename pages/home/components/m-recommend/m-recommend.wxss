@@ -1,0 +1,21 @@
+.recommendContainer{
+  display: flex;
+  margin-top: 14rpx;
+}
+
+.recommendItem{
+  flex:1;
+  text-align: center;
+  padding-bottom: 14rpx;
+  border-bottom: 8rpx solid #eee;
+}
+
+.recommendItem image{
+  width:180rpx;
+  height:180rpx;
+}
+
+.recommendItem text{
+  font-size: 26rpx;
+  color:#555;
+}

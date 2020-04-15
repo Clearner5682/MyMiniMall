@@ -1,0 +1,16 @@
+.popularTitle{
+  text-align: center;
+  color:#555;
+  font-size: 26rpx;
+}
+
+.popularContainer{
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+}
+
+.popularImage{
+  width:25%;
+  margin-top: 20rpx;
+}

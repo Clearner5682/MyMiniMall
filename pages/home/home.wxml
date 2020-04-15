@@ -1,0 +1,31 @@
+<!-- 1.轮播图 -->
+<m-swiper 
+swiperItems="{{swiperItems}}"
+ />
+
+ <!-- 2.推荐数据 -->
+<m-recommend
+recommendItems="{{recommendItems}}"
+ />
+
+ <!-- 3.本周流行 -->
+ <m-popular 
+ popularItems="{{popularItems}}"
+ />
+
+ <!-- 4.商品列表 -->
+ <m-tab 
+ tabItems="{{tabItems}}"
+ bind:getActiveIndex="tabClickHandler" />
+ <view 
+ class="goodItemContainer">
+ <m-gooditem 
+ style="width:50%;"
+ wx:for="{{tabGoods[currentType].goodItems}}"
+ wx:key="id"
+ title="{{item.title}}"
+ price="{{item.price}}"
+ amount="{{item.amount}}"
+ imageUrl="{{item.imageUrl}}"
+ />
+ </view>

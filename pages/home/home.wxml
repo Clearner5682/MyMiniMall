@@ -15,17 +15,17 @@ recommendItems="{{recommendItems}}"
 
  <!-- 4.商品列表 -->
  <m-tab 
+ id="mainTab"
+ class="tab {{isFixed?'tabFixed':''}}"
  tabItems="{{tabItems}}"
  bind:getActiveIndex="tabClickHandler" />
- <view 
- class="goodItemContainer">
- <m-gooditem 
- style="width:50%;"
- wx:for="{{tabGoods[currentType].goodItems}}"
- wx:key="id"
- title="{{item.title}}"
- price="{{item.price}}"
- amount="{{item.amount}}"
- imageUrl="{{item.imageUrl}}"
- />
- </view>
+ <m-tab 
+ id="tempTab"
+ wx:if="{{isFixed}}"
+ tabItems="{{tabItems}}"
+ bind:getActiveIndex="tabClickHandler" />
+ <m-goods goodItems="{{tabGoods[currentType].goodItems}}" />
+
+ <!-- 5.回到顶部 -->
+ <m-backtop wx:if="{{isShowBackTop}}" bind:backtop="backtop" />
+ 

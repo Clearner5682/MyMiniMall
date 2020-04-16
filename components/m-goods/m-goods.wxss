@@ -1,0 +1,14 @@
+/* components/m-goods/m-goods.wxss */
+.goodItemContainer{
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  justify-content: space-around;
+  padding: 8rpx;
+}
+
+.goodItemContainer > .m-gooditem{
+  position: relative;
+  width:48%;
+  margin-top: 20rpx;
+}

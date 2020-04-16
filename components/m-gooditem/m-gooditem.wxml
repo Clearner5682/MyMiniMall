@@ -1,8 +1,11 @@
-<view>
-<image
-class="goodItemImage" 
-src="{{imageUrl}}" 
-mode="widthFix" />
-<view class="title">{{title}}</view>
-<view class="price">{{price}}</view>
+<view class="gooditem">
+	<image class="goodItemImage" src="{{imageUrl}}" mode="widthFix" />
+	<view class="desc-info">
+   <view class='title'>{{title}}</view>
+		<view class='info'>
+			<text class='price'>¥{{price}}</text>
+			<image class='icon' src="/assets/images/common/favor.png" />
+			<text class='cfav'>{{amount}}</text>
+		</view>
+	</view>
 </view>

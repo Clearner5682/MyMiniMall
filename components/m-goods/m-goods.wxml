@@ -1,0 +1,13 @@
+<!--components/m-goods/m-goods.wxml-->
+<view 
+ class="goodItemContainer">
+ <m-gooditem 
+ class="m-gooditem"
+ wx:for="{{goodItems}}"
+ wx:key="id"
+ title="{{item.title}}"
+ price="{{item.price}}"
+ amount="{{item.amount}}"
+ imageUrl="{{item.imageUrl}}"
+ />
+ </view>
